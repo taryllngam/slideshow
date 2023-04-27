@@ -36,13 +36,13 @@ img {
   padding: 0 5%;
 }
 
-.butons #prevBtn {
+.butons #prev-btn {
   width: 70px;
   height: 40px;
   transform: translateY(-850%);
 }
 
-.butons #nextBtn {
+.butons #next-btn {
   width: 70px;
   height: 40px;
   transform: translateY(-850%);
@@ -51,7 +51,7 @@ img {
 #display {
   height: 10vh;
   width: 50vw;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 40px;
   font-style: italic;
   transform: translateY(-90%);

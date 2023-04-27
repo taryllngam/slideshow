@@ -23,37 +23,36 @@ let imgarr = [
   "./assets/images/19.jpg",
   "./assets/images/20.jpg",
 ];
-const display = document.getElementById('display')
+const display = document.getElementById("display");
 
 let nameArr = [
-   "SANTORINI",
-   "BORA BORA",
-   "KO SAMUI",
-   "HVAR",
-   "MAJORCA",
-   "KAUAI",
-   "BALI",
-   "MALDIVES",
-   "SEYCHELLES",
-   "FIJI",
-   "MALLORCA",
-   "SAMOA",
-   "ISLE OF SKYE",
-   "GALAPAGOS",
-   "HAWAII",
-   "MALDIVES",
-   "DALMATIAN ISLANDS",
-   "ARUBA",
-   "PALAWAN",
-   "OLGA"
+  "SANTORINI",
+  "BORA BORA",
+  "KO SAMUI",
+  "HVAR",
+  "MAJORCA",
+  "KAUAI",
+  "BALI",
+  "MALDIVES",
+  "SEYCHELLES",
+  "FIJI",
+  "MALLORCA",
+  "SAMOA",
+  "ISLE OF SKYE",
+  "GALAPAGOS",
+  "HAWAII",
+  "MALDIVES",
+  "DALMATIAN ISLANDS",
+  "ARUBA",
+  "PALAWAN",
+  "OLGA",
 ];
-
 
 let n = 0;
 
 const displayImages = () => {
   image.src = imgarr[n];
-  display.innerHTML = nameArr[n]
+  display.innerHTML = nameArr[n];
   n++;
   if (n === imgarr.length) {
     n = 0;
@@ -68,7 +67,7 @@ console.log(image);
 // imgarr.length - 1;
 const backwards = () => {
   image.src = imgarr[n];
-  display.innerHtml = nameArr[n]
+  display.innerHtml = nameArr[n];
   n--;
   if (n > 0) {
     n = imgarr.length - 1;
