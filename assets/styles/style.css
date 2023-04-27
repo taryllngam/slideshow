@@ -4,11 +4,10 @@
   box-sizing: border-box;
 }
 
-
 body {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(#251313,#1b1b31), url('../images/back.jpg');
+  background-image: linear-gradient(#251313, #1b1b31), url("../images/back.jpg");
   background-size: contain;
 }
 
@@ -18,16 +17,16 @@ h1 {
 }
 
 .container {
-display: flex;
-flex-direction: column;
-align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
   width: 70vw;
   height: 85vh;
   margin: auto;
+  transition: ease-in;
 }
 
 .butons {
@@ -47,4 +46,13 @@ img {
   width: 70px;
   height: 40px;
   transform: translateY(-850%);
+}
+
+#display {
+  height: 10vh;
+  width: 50vw;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-style: italic;
+  transform: translateY(-90%);
 }
