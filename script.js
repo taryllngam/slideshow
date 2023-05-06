@@ -71,7 +71,6 @@ const backwards = () => {
   n--
   if (n <= 0) {
     n = imgarr.length - 1
-  
   }
 }
 
