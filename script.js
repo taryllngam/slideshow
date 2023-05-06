@@ -1,6 +1,6 @@
 const image = document.getElementById('image')
-const prevBtn = document.getElementById('prevBtn')
-const nextBtn = document.getElementById('nextBtn')
+const prevBtn = document.getElementById('prev-btn')
+const nextBtn = document.getElementById('next-btn')
 const imgarr = [
   './assets/images/1.jpg',
   './assets/images/2.jpg',
@@ -61,7 +61,7 @@ const displayImages = () => {
 
 setInterval(() => {
   displayImages()
-}, 9000)
+}, 5000)
 console.log(image)
 
 // imgarr.length - 1;
@@ -69,8 +69,9 @@ const backwards = () => {
   image.src = imgarr[n]
   display.innerHtml = nameArr[n]
   n--
-  if (n > 0) {
+  if (n <= 0) {
     n = imgarr.length - 1
+  
   }
 }
 
